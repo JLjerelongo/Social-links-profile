@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      flex-direction: column;
+    }
+
+    /* Card */
+    .card {
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      width: 100%;
+    }
+
+    /* Profile Image */
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    /* Name and Location */
+    .name {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .location {
+      color: hsl(75, 94%, 57%);
+      font-size: 0.9rem;
+      margin: 5px 0 15px;
+    }
+
+    /* Bio */
+    .bio {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #aaa;
+    }
+
+    /* Buttons */
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      background-color: hsl(0, 0%, 20%);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: hsl(75, 94%, 57%);
+      color: black;
+    }
+
+    .btn.primary:hover {
+      background-color: #a2e706;
+    }
+
+    /* Attribution */
+    .attribution {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 20px;
+    }
+
+    .attribution a {
+      color: hsl(75, 94%, 57%);
+      text-decoration: none;
+    }
+
+    .attribution a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <img src="/assets/images/avatar-jessica.jpeg" alt="profilePick" class="profile-image">
+    <h1 class="name">Jessica Randall</h1>
+    <h2 class="location">London, United Kingdom</h2>
+    <p class="bio">"Front-end developer and avid reader."</p>
+
+    <div class="buttons">
+      <a href="https://github.com" class="btn">GitHub</a>
+      <a href="https://www.frontendmentor.io" class="btn">Frontend Mentor</a>
+      <a href="https://www.linkedin.com" class="btn">LinkedIn</a>
+      <a href="https://twitter.com" class="btn">Twitter</a>
+      <a href="https://instagram.com" class="btn">Instagram</a>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Jeremias Longo</a>.
+  </div>
+</body>
+
+</html>
